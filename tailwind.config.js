@@ -31,6 +31,14 @@ module.exports = {
       default: "0 2px 18px rgba(0, 0, 0, 0.06)",
       md: "0 -3px 36px rgba(0, 0, 0, 0.12)",
     },
+    zIndex: {
+      "-1": "-1",
+      60: "60",
+      70: "70",
+    },
+    /* inset: {
+      "2/5": "40%",
+    }, */
   },
   plugins: [],
 };
