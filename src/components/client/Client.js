@@ -1,6 +1,12 @@
 import React from "react";
+import { ClientDetailsData } from "../data/clientDetails";
+import { ClientLogoData } from "../data/clientLogo";
+import ClientLogo from "./ClientLogo";
+import ClientPortfolio from "./ClientPortfolio";
 
 function Client() {
+  const clientDetails = ClientDetailsData;
+  const clientLogo = ClientLogoData;
   return (
     <div>
       <div className="container py-16 md:py-20" id="portfolio">
@@ -10,24 +16,10 @@ function Client() {
         <h3 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
           Here's what I have done with the past
         </h3>
-
         <div className="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
-          {/* <a
-            href="/"
-            className="mx-auto transform transition-all hover:scale-105 md:mx-0"
-          ></a>
-          <a
-            href="/"
-            className="mx-auto transform transition-all hover:scale-105 md:mx-0"
-          ></a>
-          <a
-            href="/"
-            className="mx-auto transform transition-all hover:scale-105 md:mx-0"
-          ></a>
-          <a
-            href="/"
-            className="mx-auto transform transition-all hover:scale-105 md:mx-0"
-          ></a> */}
+          {clientDetails.map((item) => {
+            return <ClientPortfolio item={item} key={item.id} />;
+          })}
         </div>
       </div>
 
@@ -38,44 +30,9 @@ function Client() {
               My latest clients
             </h2>
             <div className="flex flex-wrap items-center justify-center pt-4 sm:pt-4">
-              <span className="m-8 block">
-                <img
-                  src="/assets/img/logo-coca-cola.svg"
-                  alt="client logo"
-                  className="mx-auto block h-12 w-auto"
-                />
-              </span>
-              <span className="m-8 block">
-                <img
-                  src="/assets/img/logo-apple.svg"
-                  alt="client logo"
-                  className="mx-auto block h-12 w-auto"
-                />
-              </span>
-
-              <span className="m-8 block">
-                <img
-                  src="/assets/img/logo-netflix.svg"
-                  alt="client logo"
-                  className="mx-auto block h-12 w-auto"
-                />
-              </span>
-
-              <span className="m-8 block">
-                <img
-                  src="/assets/img/logo-amazon.svg"
-                  alt="client logo"
-                  className="mx-auto block h-12 w-auto"
-                />
-              </span>
-
-              <span className="m-8 block">
-                <img
-                  src="/assets/img/logo-stripe.svg"
-                  alt="client logo"
-                  className="mx-auto block h-12 w-auto"
-                />
-              </span>
+              {clientLogo.map((item) => {
+                return <ClientLogo item={item} key={item.id} />
+              })}
             </div>
           </div>
         </div>
