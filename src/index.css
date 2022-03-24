@@ -5,3 +5,23 @@
 * {
   font-family: 'Poppins';
 }
+
+.max-w-15 {
+  max-width: 15rem;
+}
+
+.w-74 {
+  width: 74%;
+}
+
+.w-95 {
+  width: 95%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-84 {
+  width: 84%;
+}

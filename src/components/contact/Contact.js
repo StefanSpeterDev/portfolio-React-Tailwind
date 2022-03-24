@@ -43,7 +43,7 @@ function Contact() {
           </button>
         </form>
         <div className="flex flex-col pt-16 lg:flex-row items-center">
-          <div className="w-full border-l-2 border-t-0 border-r-2 border-l-2  border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-2 lg:border-t-2">
+          <div className="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-2 lg:border-t-2">
             <div className="flex items-center">
               <i className="bx bx-envelope text-2xl text-grey-40"></i>
               <p className="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
@@ -62,7 +62,18 @@ function Contact() {
               </p>
             </div>
             <p className="pt-2 text-left font-body font-bold text-primary lg:text-lg">
-              123 New York D Block 1100, 2011 USA
+              Lille, France / Calgary, Canada
+            </p>
+          </div>
+          <div className="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2">
+            <div className="flex items-center">
+              <i className="bx bxl-github text-2xl text-grey-40"></i>
+              <p className="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
+                Repo of this website
+              </p>
+            </div>
+            <p className="pt-2 text-left font-body font-bold text-primary lg:text-lg">
+              <a href="https://github.com/StefanSpeterDev/portfolio-React-Tailwind">Here!</a>
             </p>
           </div>
         </div>
