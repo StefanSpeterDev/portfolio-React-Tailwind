@@ -15,6 +15,7 @@ function Work() {
 
       <div className="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
         <span className="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+        
         {workData.map((item) => {
             return <WorkCard item={item} key={item.id} />
         })}
