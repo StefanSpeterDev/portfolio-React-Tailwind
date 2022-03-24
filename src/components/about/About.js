@@ -41,7 +41,7 @@ function About() {
               <h3 className="font-body text-3xl font-bold text-primary">95%</h3>
             </div>
             <div className="mt-2 h-3 w-full rounded-full bg-lila">
-              <div className="h-3 rounded-full bg-primary" ></div>
+              <div className="h-3 rounded-full bg-primary w-95" ></div>
             </div>
           </div>
           <div className="pt-6">
@@ -52,7 +52,7 @@ function About() {
               <h3 className="font-body text-3xl font-bold text-primary">70%</h3>
             </div>
             <div className="mt-2 h-3 w-full rounded-full bg-lila">
-              <div className="h-3 rounded-full bg-primary"></div>
+              <div className="h-3 rounded-full bg-primary w-70"></div>
             </div>
           </div>
           <div className="pt-6">
@@ -60,10 +60,10 @@ function About() {
               <h4 className="font-body font-semibold uppercase text-black">
                 Javascript
               </h4>
-              <h3 className="font-body text-3xl font-bold text-primary">98%</h3>
+              <h3 className="font-body text-3xl font-bold text-primary">74%</h3>
             </div>
             <div className="mt-2 h-3 w-full rounded-full bg-lila">
-              <div className="h-3 rounded-full bg-primary"></div>
+              <div className="h-3 rounded-full bg-primary w-74"></div>
             </div>
           </div>
           <div className="pt-6">
@@ -71,10 +71,10 @@ function About() {
               <h4 className="font-body font-semibold uppercase text-black">
                 Drupal 8/9
               </h4>
-              <h3 className="font-body text-3xl font-bold text-primary">91%</h3>
+              <h3 className="font-body text-3xl font-bold text-primary">84%</h3>
             </div>
             <div className="mt-2 h-3 w-full rounded-full bg-lila">
-              <div className="h-3 rounded-full bg-primary"></div>
+              <div className="h-3 rounded-full bg-primary w-84"></div>
             </div>
           </div>
         </div>

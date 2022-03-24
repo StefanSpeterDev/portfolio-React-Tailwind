@@ -10,12 +10,10 @@ function Work() {
         My work experience
       </h2>
       <h3 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-        Here's what I did before freelancing
+        Here's where I worked during school
       </h3>
 
-      <div className="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
-        <span className="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
-        
+      <div className="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">        
         {workData.map((item) => {
             return <WorkCard item={item} key={item.id} />
         })}
