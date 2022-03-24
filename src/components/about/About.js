@@ -1,4 +1,5 @@
 import React from "react";
+import Socials from "../socials/Socials";
 
 function About() {
   return (
@@ -9,16 +10,13 @@ function About() {
             Who am I?
           </h2>
           <h4 className="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-            I'm Christy Smith, a Web Designer & Photographer
+            I'm Stefan Speter, a Front-End Developer (on ReactJS, VueJS) & a Back-End Developer (on Drupal)
           </h4>
           <p className="pt-6 font-body leading-relaxed text-grey-20">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            I'm 23 years old and I'm currently studying at <a href="https://www.efficom.fr/">Efficom</a> in Lille (France), it's my last year before getting my Master Degree
+            in Digital Project Management with a Major in Web Development. <br/>
+            I love to use the Agile Scrum method in my work environment to create a real team effort! <br/>
+            On my spare time I like to play chess ♟️, video games 🎮 & to travel all around the world! ✈️ <br/>
           </p>
           <div className="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
             <div className="flex items-center justify-center sm:justify-start">
@@ -30,21 +28,7 @@ function About() {
               </div>
             </div>
             <div className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
-              <a href="/">
-                <i className="bx bxl-facebook-square text-2xl text-primary hover:text-yellow"></i>
-              </a>
-              <a href="/" className="pl-4">
-                <i className="bx bxl-twitter text-2xl text-primary hover:text-yellow"></i>
-              </a>
-              <a href="/" className="pl-4">
-                <i className="bx bxl-dribbble text-2xl text-primary hover:text-yellow"></i>
-              </a>
-              <a href="/" className="pl-4">
-                <i className="bx bxl-linkedin text-2xl text-primary hover:text-yellow"></i>
-              </a>
-              <a href="/" className="pl-4">
-                <i className="bx bxl-instagram text-2xl text-primary hover:text-yellow"></i>
-              </a>
+              <Socials class="text-primary" hover="text-yellow" />
             </div>
           </div>
         </div>
@@ -54,7 +38,7 @@ function About() {
               <h4 className="font-body font-semibold uppercase text-black">
                 HTML & CSS
               </h4>
-              <h3 className="font-body text-3xl font-bold text-primary">85%</h3>
+              <h3 className="font-body text-3xl font-bold text-primary">95%</h3>
             </div>
             <div className="mt-2 h-3 w-full rounded-full bg-lila">
               <div className="h-3 rounded-full bg-primary" ></div>
@@ -63,7 +47,7 @@ function About() {
           <div className="pt-6">
             <div className="flex items-end justify-between">
               <h4 className="font-body font-semibold uppercase text-black">
-                Python
+                ReactJS
               </h4>
               <h3 className="font-body text-3xl font-bold text-primary">70%</h3>
             </div>
@@ -85,7 +69,7 @@ function About() {
           <div className="pt-6">
             <div className="flex items-end justify-between">
               <h4 className="font-body font-semibold uppercase text-black">
-                Figma
+                Drupal 8/9
               </h4>
               <h3 className="font-body text-3xl font-bold text-primary">91%</h3>
             </div>
