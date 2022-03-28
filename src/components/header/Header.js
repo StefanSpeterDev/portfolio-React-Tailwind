@@ -12,9 +12,9 @@ function Header() {
           <div className="flex flex-col items-center justify-center lg:flex-row">
             <div className="rounded-full border-8 border-primary shadow-xl">
               <img
-                src="/assets/img/blog-author.jpg"
+                src="./images/StefanSpeter.jpg"
                 className="h-48 rounded-full sm:h-56"
-                alt="author"
+                alt="Stefan Speter"
               />
             </div>
             <div className="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">

@@ -4,8 +4,8 @@ module.exports = {
     extend: {
       colors: {
         transparent: "transparent",
-        primary: "#5540af",
-        secondary: "#252426",
+        primary: "#006DB5",
+        secondary: "#000003",
         white: "#ffffff",
         black: "#000000",
         yellow: "#f9e71c",
@@ -17,8 +17,8 @@ module.exports = {
         "grey-50": "#f4f3f8",
         "grey-60": "#edebf6",
         "grey-70": "#d8d8d8",
-        "hero-gradient-from": "rgba(85, 64, 174, 0.95)",
-        "hero-gradient-to": "rgba(65, 47, 144, 0.93)",
+        "hero-gradient-from": "rgba(0, 85, 154, 0.95)",
+        "hero-gradient-to": "rgba(0, 62, 127, 0.93)",
       },
     },
     container: {
