@@ -3,7 +3,7 @@ import Socials from "../socials/Socials";
 
 function About() {
   return (
-    <div className="bg-grey-50" id="about">
+    <div id="about">
       <div className="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
         <div className="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
           <h2 className="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">

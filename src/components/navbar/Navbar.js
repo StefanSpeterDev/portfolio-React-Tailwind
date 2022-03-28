@@ -4,11 +4,11 @@ function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <div>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-primary">
+      <nav className="flex relative flex-wrap items-center justify-between px-2 py-3 bg-primary">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
-              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+              className="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
               href="#pablo"
             >
               Stefan Speter
@@ -23,42 +23,34 @@ function Navbar() {
           </div>
           <div
             className={
-              "lg:flex flex-grow items-center" +
+              "lg:flex flex-grow lg:items-center md:justify-end items-end" +
               (navbarOpen ? " flex" : " hidden")
             }
             id="example-navbar-danger"
           >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto md:justify-end">
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
+                  href="#about"
                 >
-                  <span className="ml-2">About</span>
+                  <span className="ml-2 text-lg">About</span>
                 </a>
               </li>
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
+                  href="#clients"
                 >
-                  <span className="ml-2">Skills</span>
+                  <span className="ml-2 text-lg">Clients</span>
                 </a>
               </li>
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
+                  href="#contact"
                 >
-                  <span className="ml-2">Clients</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
-                >
-                  <span className="ml-2">Contact</span>
+                  <span className="ml-2 text-lg">Contact</span>
                 </a>
               </li>
             </ul>
