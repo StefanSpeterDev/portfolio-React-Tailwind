@@ -7,7 +7,7 @@ function Socials(props) {
     <div>
       {socialData.map((item) => {
         return (
-          <a href={item.link} alt={item.alt} className="pl-4">
+          <a href={item.link} alt={item.alt} className="pl-4" key={item.id}>
             <i
               className={
                 item.icon + " " +
