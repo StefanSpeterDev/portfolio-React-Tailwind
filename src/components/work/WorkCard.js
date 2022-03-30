@@ -22,7 +22,7 @@ function WorkCard({ item }) {
             <div className="md:-mt-1 md:pl-8">
               <div className="flex items-center">
                 <i className="bx bxs-right-arrow hidden mr-2 text-primary md:flex"></i>
-                <span className="block font-body font-bold text-grey-40">
+                <span className="block font-body font-bold text-white">
                   {item.dateJoining} - {item.dateEnd}
                 </span>
               </div>
