@@ -1,3 +1,10 @@
+# What's in this project ?
+Javascript / ReactJS
+Formspree API (to manage mail send through the contact form)
+Tailwind v3
+Aos
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
