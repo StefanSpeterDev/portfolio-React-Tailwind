@@ -22,18 +22,18 @@ function WorkCard({ item }) {
             <div className="md:-mt-1 md:pl-8">
               <div className="flex items-center">
                 <i className="bx bxs-right-arrow hidden mr-2 text-primary md:flex"></i>
-                <span className="block font-body font-bold text-white">
+                <span className="block font-body font-bold text-white tracking-wider">
                   {item.dateJoining} - {item.dateEnd}
                 </span>
               </div>
 
               <div>
-                <span className="block pt-2 font-header text-xl font-bold uppercase text-primary">
+                <span className="block pt-2 font-header text-xl font-bold uppercase text-purple">
                   {item.designation}
                 </span>
                 <div className="pt-2 flex">
                   <span
-                    className="block font-body text-black"
+                    className="block font-body text-white"
                     dangerouslySetInnerHTML={{ __html: item.work }}
                   ></span>
                 </div>

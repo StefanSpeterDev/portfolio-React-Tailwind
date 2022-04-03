@@ -24,4 +24,14 @@ export const ClientLogoData = [
     img: "./images/afte.webp",
     alt: "AFTE",
   },
+  {
+    id: 6,
+    img: "./images/pasteurdon.svg",
+    alt: "Pasteur Don",
+  },
+  {
+    id: 7,
+    img: "./images/isagrilogo.webp",
+    alt: "Isagri emploi",
+  },
 ];

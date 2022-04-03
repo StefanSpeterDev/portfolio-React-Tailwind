@@ -6,7 +6,7 @@ function ClientLogo({item}) {
       <img
         src={item.img}
         alt={item.alt}
-        className="mx-auto block h-16 w-auto"
+        className="mx-auto block h-14 w-auto"
       />
     </span>
   );
