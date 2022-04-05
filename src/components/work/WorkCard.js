@@ -3,7 +3,11 @@ import React from "react";
 function WorkCard({ item }) {
   return (
     <div className="mt-8 flex flex-col items-center text-center md:flex-row md:text-left">
-      <div className="md:w-2/5">
+      <div
+        className="md:w-2/5"
+        data-aos-duration="1000"
+        data-aos={item.aosImage}
+      >
         <div className="flex justify-center">
           <span className="shrink-0">
             <img
@@ -14,7 +18,9 @@ function WorkCard({ item }) {
           </span>
         </div>
       </div>
-      <div className="md:w-3/5">
+      <div className="md:w-3/5"
+      data-aos-duration="1000"
+      data-aos={item.aosTexte}>
         <span className="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
 
         <div className="relative flex md:pl-18 ml-8">

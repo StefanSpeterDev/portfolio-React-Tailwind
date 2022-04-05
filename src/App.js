@@ -1,9 +1,12 @@
 import Home from "./components/home/Home";
-
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function App() {
-  return (
-    <Home />
-  );
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+  return <Home />;
 }
-
 export default App;

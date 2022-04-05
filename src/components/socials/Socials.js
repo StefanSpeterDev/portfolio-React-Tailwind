@@ -3,7 +3,6 @@ import { SocialsData } from "../data/socials";
 
 function Socials(props) {
   const socialData = SocialsData;
-  console.log(props.hover);
   return (
     <div>
       {socialData.map((item) => {

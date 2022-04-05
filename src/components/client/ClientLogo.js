@@ -1,8 +1,8 @@
 import React from "react";
 
-function ClientLogo({item}) {
+function ClientLogo({ item }) {
   return (
-    <span className="m-8 block">
+    <span className="m-8 block" data-aos="fade-up" data-aos-duration="1000">
       <img
         src={item.img}
         alt={item.alt}
