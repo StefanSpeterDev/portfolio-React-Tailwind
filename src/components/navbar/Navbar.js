@@ -5,7 +5,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="flex relative flex-wrap items-center justify-between px-2 py-3 bg-gradient-to-r from-hero-gradient-from to-hero-gradient-to">
+      <nav className="flex relative flex-wrap items-center justify-between px-2 py-3 bg-gradient-to-r from-hero-gradient-from to-hero-gradient-to" id="back-to-top-anchor">
         <div
           data-aos="fade-down"
           data-aos-duration="1000"
