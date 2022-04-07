@@ -7,6 +7,7 @@ import Header from "../header/Header";
 import Navbar from "../navbar/Navbar";
 import Navbar2 from "../navbar/Navbar2";
 import Work from "../work/Work";
+import ScrollTop from "../scrollTop/ScrollTop";
 
 function Home() {
   return <>
@@ -18,6 +19,7 @@ function Home() {
       <Work />
       <Contact />
       <Footer />
+      <ScrollTop/>
   </>;
 }
 
