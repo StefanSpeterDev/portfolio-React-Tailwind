@@ -2,7 +2,8 @@
 Javascript / ReactJS <br/>
 Formspree API (to manage mail send through the contact form)<br/>
 Tailwind v3<br/>
-Aos
+Aos<br/>
+MaterialUI
 
 
 # Getting Started with Create React App
