@@ -1,69 +1,109 @@
-import React from "react";
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
+import Link from "@mui/material/Link";
+import MenuItem from "@mui/material/MenuItem";
+import './navbar.css';
 
-function Navbar() {
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
+const ResponsiveAppBar = () => {
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
 
   return (
-    <>
-      <nav className="flex relative flex-wrap items-center justify-between px-2 py-3 bg-gradient-to-r from-hero-gradient-from to-hero-gradient-to" id="back-to-top-anchor">
-        <div
-          data-aos="fade-down"
-          data-aos-duration="1000"
-          className="container px-4 mx-auto flex flex-wrap items-center justify-between"
-        >
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <a
-              className="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-              href="/"
-            >
-              Stefan Speter
-            </a>
-            <button
-              className="lg:hidden text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block  outline-none focus:outline-none"
-              type="button"
-              onClick={() => setNavbarOpen(!navbarOpen)}
-            >
-              <i className="fas fa-bars"></i>
-            </button>
-          </div>
-          <div
-            className={
-              "lg:flex flex-grow lg:items-center md:justify-end items-end" +
-              (navbarOpen ? " flex" : " hidden")
-            }
-            id="example-navbar-danger"
+    <AppBar
+      position="static"
+      style={{
+        background:
+          "linear-gradient(90deg, rgba(20,30,48,0.95) 0%, rgba(36,59,85,0.93) 100%)",
+      }}
+      id="back-to-top-anchor"
+    >
+      <Container maxWidth="xl">
+        <Toolbar disableGutters>
+          <Typography
+            variant="h6"
+            noWrap
+            component="div"
+            sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
           >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto md:justify-end">
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#about"
-                >
-                  <span className="ml-2 text-lg">About</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#clients"
-                >
-                  <span className="ml-2 text-lg">Clients</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#contact"
-                >
-                  <span className="ml-2 text-lg">Contact</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </>
+            STEFAN SPETER
+          </Typography>
+          {/* Show my name at the middle on small device only */}
+          <Typography
+            variant="h6"
+            noWrap
+            component="div"
+            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }, justifyContent:"center" }}
+          >
+            STEFAN SPETER
+          </Typography>
+          <Box sx={{ display: { xs: "flex", md: "none" } }}>
+            <IconButton
+              size="large"
+              aria-label="menu appbar"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
+            >
+              {/* Show links in mobile*/}
+              <MenuItem onClick={handleCloseNavMenu} style={{flexDirection:'column'}}>
+                <Link className="linkmenumobile" href="#about">ABOUT</Link>
+                <Link className="linkmenumobile" href="#skills">SKILLS</Link>
+                <Link className="linkmenumobile" href="#portfolio">PORTFOLIO</Link>
+                <Link className="linkmenumobile" href="#clients">CLIENTS</Link>
+                <Link className="linkmenumobile" href="#contact">CONTACT</Link>
+              </MenuItem>
+            </Menu>
+          </Box>
+          {/* Links on desktop */}
+          <Box
+            style={{ justifyContent: "flex-end" }}
+            sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
+          >
+            <Link className="linkmenu" href="#about">ABOUT</Link>
+            <Link className="linkmenu" href="#skills">SKILLS</Link>
+            <Link className="linkmenu" href="#portfolio">PORTFOLIO</Link>
+            <Link className="linkmenu" href="#clients">CLIENTS</Link>
+            <Link className="linkmenu" href="#contact">CONTACT</Link>
+          </Box>
+        </Toolbar>
+      </Container>
+    </AppBar>
   );
-}
-
-export default Navbar;
+};
+export default ResponsiveAppBar;

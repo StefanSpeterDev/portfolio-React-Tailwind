@@ -40,7 +40,7 @@ function Header() {
                 <div className="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
                   <a
                     href="#about"
-                    className="inline-flex items-center text-lg h-8 px-4 transition-colors duration-200 rounded-lg text-white bg-black hover:text-primary hover:bg-white"
+                    className="animate-bounce inline-flex items-center text-lg h-8 px-4 transition-colors duration-200 rounded-lg text-white bg-black hover:text-primary hover:bg-white"
                   >
                     Learn more about me !
                     <div className="hover:text-primary flex justify-center item">

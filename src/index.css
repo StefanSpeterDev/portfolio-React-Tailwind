@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  overflow-x: hidden;
+}
 * {
   font-family: 'Poppins';
   scroll-behavior: smooth;
+  
 }
 
 .max-w-15 {
