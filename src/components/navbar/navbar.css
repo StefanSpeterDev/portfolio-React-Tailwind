@@ -1,0 +1,18 @@
+.linkmenu, .linkmenumobile {
+    margin-left: 0.5rem !important;
+    text-decoration: none !important;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    transition: all 0.3s;
+}
+.linkmenu {
+    color: white !important;
+    
+}
+
+.linkmenumobile {
+    color: #000003 !important;
+}
+.linkmenu:hover {
+    color: grey !important;
+}
