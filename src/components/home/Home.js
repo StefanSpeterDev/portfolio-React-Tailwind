@@ -7,18 +7,22 @@ import Header from "../header/Header";
 import Navbar from "../navbar/Navbar";
 import Work from "../work/Work";
 import ScrollTop from "../scrollTop/ScrollTop";
+import Skills from "../skills/skills";
 
 function Home() {
-  return <>
+  return (
+    <>
       <Navbar />
       <Header />
       <About />
+      <Skills />
       <Client />
       <Work />
       <Contact />
       <Footer />
-      <ScrollTop/>
-  </>;
+      <ScrollTop />
+    </>
+  );
 }
 
 export default Home;
