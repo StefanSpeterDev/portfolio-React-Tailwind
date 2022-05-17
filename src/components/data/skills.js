@@ -9,6 +9,10 @@ export const SkillsData = [
         icon: <i className="devicon-react-original colored"></i>,
       },
       {
+        name: "NextJS",
+        icon:  <i className="devicon-nextjs-original colored"></i>,
+      },
+      {
         name: "Javascript",
         icon: <i className="devicon-javascript-plain colored"></i>,
       },
@@ -44,6 +48,14 @@ export const SkillsData = [
       {
         name: "Drupal",
         icon: <i className="devicon-drupal-plain colored"></i>,
+      },
+      {
+        name: "NodeJS",
+        icon: <i className="devicon-nodejs-plain colored"></i>,
+      },
+      {
+        name: "ExpressJS",
+        icon: <i className="devicon-express-original colored"></i>,
       },
     ],
   },
